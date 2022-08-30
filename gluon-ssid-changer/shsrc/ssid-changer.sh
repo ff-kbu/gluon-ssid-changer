@@ -100,7 +100,11 @@ if [ $TQ_LIMIT_ENABLED = 1 ]; then
 	fi
 else
 	MSG=""
-	CHECK="$(batctl gwl -H|grep -v "gateways in range"|wc -l)"
+  if ping -c 1 -w 10 google.de &>/dev/null; then
+    CHECK=1
+  else
+    CHECK=0
+  fi
 fi
 
 UP=$(($UT / 60))
