@@ -2,8 +2,7 @@ gluon-ssid-changer
 ==================
 
 *This branch of the script contains the ssid-changer version for the gluon
-branches 2018.1.x and newer. For older releases of Gluon
-use the branches "2017.1.x" and "2016.2.x".*
+branches 2018.1.x and newer.
 
 This package adds a script to change the SSID when there is no connection to any
 gateway. This Offline-SSID can be generated from the
@@ -16,8 +15,8 @@ toggles back to the original SSID.
 
 You can enable/disable it in the config mode.
 
-It checks if a gateway is reachable in an interval. Different algorithms can be
-selected to determine whether a gateway is assumed reachable:
+Per default it checks whether google.de is reachable. It also can check for simple gateway availbiity.
+Different algorithms can be selected to determine whether a gateway is assumed reachable:
 
 -  ``tq_limit_enabled=true``: (not working with BATMAN\_V) define an upper and
    lower bound to toggle the SSID. As long as the TQ stays in-between those
@@ -139,3 +138,4 @@ value any more. It is now in use in*:
 -  Freifunk Nord
 -  Eulenfunk
 -  Freifunk Vogtland
+-  Freifunk Köln/Bonn/Umgebung
