@@ -1,1 +1,1 @@
-* * * * * /lib/gluon/ssid-changer/ssid-changer.sh
+* * * * * /usr/bin/flock -n /var/lock/ssid-changer.lock /lib/gluon/ssid-changer/ssid-changer.sh
