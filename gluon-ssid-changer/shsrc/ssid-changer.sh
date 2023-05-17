@@ -100,7 +100,7 @@ if [ $TQ_LIMIT_ENABLED = 1 ]; then
 	fi
 else
 	MSG=""
-  if ping -c 1 -w 10 google.de &>/dev/null; then
+  if ping -c 1 -w 10 8.8.8.8 &>/dev/null; then
     CHECK=1
   else
     CHECK=0
